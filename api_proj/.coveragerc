@@ -1,0 +1,3 @@
+[run]
+source = api_proj
+omit = api_proj/test*
