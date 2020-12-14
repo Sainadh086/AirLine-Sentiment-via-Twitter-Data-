@@ -21,7 +21,7 @@ def tfidf_predict(data):
     text_predict = tfidf_vectorizer.transform(data)
     return text_predict
 def model_predict(data):
-    text_predict = tfidf_predict(data)
+    text_predict = tfidf_predict([data])
     lr = joblib.load('Models/naive_enthire.pkl')
     y_pred = lr.predict(text_predict)
     print(y_pred)
